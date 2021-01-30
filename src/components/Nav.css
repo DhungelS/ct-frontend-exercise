@@ -1,0 +1,11 @@
+.header-title {
+  color: #ffffff;
+  font-size: 32px;
+  vertical-align: middle;
+}
+
+.tools-icon {
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+}

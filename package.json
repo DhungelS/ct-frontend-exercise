@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@commercetools/api-request-builder": "^5.6.3",
     "@commercetools/sdk-auth": "^3.0.10",
     "@commercetools/sdk-client": "^2.1.2",
     "@testing-library/jest-dom": "^5.11.4",

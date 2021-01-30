@@ -1,10 +1,8 @@
 import React, { useEffect } from "react";
 import generateToken from "./services/intialize";
-
+import Nav from './components/Nav'
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
-  // const genToken = async () => {
-  //   return await generateToken();
-  // };
 
   useEffect(() => {
     generateToken()
@@ -15,19 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav/>
     </div>
   );
 }
