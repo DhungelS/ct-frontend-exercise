@@ -23,9 +23,6 @@ const SearchBar = ({ setSearchQuery}) => {
           placeholder="Search"
           style={{ width: "375px" }}
         />
-        <Button style={{ marginLeft: "15px" }} variant="outline-success">
-          Search
-        </Button>
       </div>
     </>
   );
