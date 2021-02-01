@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import generateToken from "./services/intialize";
 import Nav from './components/Nav'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ProductsPage from "./components/ProductsPage";
 function App() {
 
   useEffect(() => {
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="App">
       <Nav/>
+      <ProductsPage/>
     </div>
   );
 }

@@ -2,14 +2,15 @@ import { createClient } from "@commercetools/sdk-client";
 import { createHttpMiddleware } from "@commercetools/sdk-middleware-http";
 import { createRequestBuilder } from "@commercetools/api-request-builder";
 
-const requestBuilder = createRequestBuilder({ projectKey: "foo" });
+const requestBuilder = createRequestBuilder({ projectKey: "frontend-interview-exercise" });
 const productProjectionsService = requestBuilder.productProjections;
 const productsService = requestBuilder.products;
 
 const access_token = localStorage.getItem("access_token");
 
+
 const client = createClient({
-  middlewares: [createHttpMiddleware()],
+  middlewares: [createHttpMiddleware({host: 'https://api.us-central1.gcp.commercetools.com'})],
 });
 const uri = productProjectionsService.build();
 
@@ -21,13 +22,9 @@ const request = {
   },
 };
 
-const getProductsData = async () => {
-  return await client.execute(request)
-    
-};
 
-export default getProductsData
+const getProducts = async () => {
+   return await client.execute(request)
+}
 
-// client.execute(request)
-// .then(result => console.log('tst', result))
-// .catch(error => console.log('err', error))
+export default getProducts
