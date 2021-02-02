@@ -8,7 +8,7 @@ const Nav = () => {
       <Navbar bg="dark">
         <NavbarBrand href="#home">
           <img className='tools-icon' src={'https://cdn.onlinewebfonts.com/svg/img_400713.png'}/>
-          <span className='header-title'>Ecomtools Store</span>
+          <span className='header-title'>Comtools Store</span>
         </NavbarBrand>
       </Navbar>
     </>

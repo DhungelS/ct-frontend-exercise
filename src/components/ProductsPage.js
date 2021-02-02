@@ -21,12 +21,8 @@ const ProductsPage = () => {
     setFilteredProducts(filteredProducts)
   }, [products, searchQuery])
 
-//   const currentProducts =
-//     filteredProducts.length > 0 ? filteredProducts : products;
-
   return (
     <>
-      <h1>Products</h1>
       <SearchBar
         products={products}
         filteredProducts={products}
